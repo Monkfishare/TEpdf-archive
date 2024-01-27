@@ -1,0 +1,275 @@
+html {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+figure {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+iframe {
+    width: 100%;
+    max-width:800px;
+    margin: auto;
+    border: 0;
+}
+
+header, .css-nxgt9g {
+    text-align: center;
+	padding: 10px;
+}
+
+body {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 80px;
+}
+
+.article__subheadline {
+    color: #e3120b;
+    font-family: EconSansOS;
+    font-size: 1.125rem;
+    font-weight: 400;
+    display: inline-block;
+    line-height: 1.4;
+    margin: 20 0 0 0;
+}
+
+h1 {
+    display: block;
+    font-family: MiloTE;
+    width: 350px;
+    font-size:1.7rem;
+	font-weight: 300;
+	padding: 20px;
+	text-align: center;
+	margin: auto;
+}
+
+h2 {
+    display: block;
+    font-family: MiloTE;
+    font-size:1.125rem;
+    width: 350px;
+	margin: auto;
+	text-align: center;
+}
+
+.article-text, .css-1hno3qs, p.article__body-text, p.article__footnote {
+    width: 100%;
+    max-width: 780px;
+    font-family: MiloTE;
+    line-height: 1.4;
+    font-size: 1.2rem;
+}
+
+.article-text {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+cite {
+	color: #595959;
+	font-size: 1rem;
+	padding: 20px;
+	font-weight: 700;
+	margin: 0 2rem 0 0;
+}
+
+p.article__footnote {
+    color: #595959;
+    font-family: MiloTE;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+div.layout-article-links.layout-article-promo, p.article-audio-player__cta {
+    display: none;
+}
+
+.ufinish {
+    color:#e3120b;
+    font-size: 1.3rem;
+}
+
+.article__body-text[data-interactive-class=g-interactive-source] {
+    color: #595959;
+    font-family: EconSansCnd;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: MiloTE;
+    font-style: normal;
+    font-weight: 400;
+    src:
+      url('./fonts/milo-primary-subset-rg.woff2') format('woff2'),
+      url('./fonts/milo-primary-subset-rg.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansOS;
+    font-style: normal;
+    font-weight: 400;
+    src:
+      url('./fonts/econsans-primary-subset-rg.woff2') format('woff2'),
+      url('./fonts/econsans-primary-subset-rg.woff') format('woff');
+}
+
+figcaption {
+    text-align: center;
+	display: none;
+}
+
+.css-1fs0t47.emsvzne0, .css-13k2iu7.e1m2w0l00 {
+	display: none;
+}
+
+img {
+	max-height: 1160px;
+	height: auto;
+    margin: auto;
+    display: block;
+    max-width:550px;
+    width: auto; 
+}
+
+img:first-child {
+    width: 100% ;
+    /* margin-top: 200px ; */
+}
+
+.article-audio-player__cta, .article-audio-player__center-tooltip {
+	display: none;
+}
+
+#myImg {
+	height: 200px;
+	width: auto;
+	padding: 20px;
+}
+
+.react-audio-player {
+	width: 90%;
+}
+
+a {
+    color:#e3120b;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+.weekly-edition-header__headline {
+    margin: auto;
+    max-width: 40rem;
+    font-family: MiloTE;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.layout-weekly-edition-header {
+    text-align: center;
+}
+
+.weekly-edition-header__date {
+    font-family: EconSansOS;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.4;
+    display: block;
+    margin: 20 0 0 0;
+    text-transform: uppercase;
+}
+
+.ds-tab-list, div._newsletterContentPromo {
+    display: none;
+}
+
+.weekly-edition-wtw__item {
+    list-style: none;
+}
+
+h2 {
+    font-family: EconSansOS;
+    font-size: 1.2rem;
+}
+.weekly-edition-wtw__link {
+    color: #0d0d0d;
+    display: block;
+    font-family: MiloTE;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    padding: 5 5 5 5;
+    margin: 0 0 0 -40;
+    text-decoration: none;
+}
+
+span.teaser__subheadline {
+    color: #e3120b; 
+    font-family: EconSansOS;
+    font-size: 1rem;
+    font-weight: 400;
+    display: inline-block;
+    line-height: 1.4;
+    margin: 0 0 0 0;
+    text-decoration: none;
+}
+
+span.teaser__headline.teaser__headline {
+    color: black;
+    font-family: MiloTE;
+    font-size: 1.3rem;
+    text-decoration: chartreuse;
+}
+
+.css-1uzxrld, .css-1tbn2ub, .css-1tllssg, .css-jhessp.e5tfikp3 {
+	display: none;
+}
+
+.headline-link, .css-1pipetz a, .css-1te5c83 a, .css-1hno3qs a {
+    text-decoration: none;
+    font-family: MiloTE;
+    color: #e3120b; 
+}
+
+.css-1fs0t47 a {
+    font-family: MiloTE;
+    color: black;
+}
+
+.cs.teaser__description.teaser__description--sc2 {
+    margin: -20 0 0 0;
+    font-family:MiloTE;
+    font-size:1.1rem;
+}
+
+.css-b4a1pi, .flytitle-container {
+    text-align: center;
+}
+
+@media print {
+    .pagebreak {
+        clear: both;
+        page-break-after: always;
+    }
+    /* div {
+        break-inside: avoid;
+    } */
+}
+
+svelte-scroller-outer, .ai2html-chart {
+    display: none;
+}

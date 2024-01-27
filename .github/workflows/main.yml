@@ -1,0 +1,41 @@
+name: The Economist
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0,30 14,15 * * 4' # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule
+
+jobs:
+  run_te_script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: 3.x
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+
+    - name: Run scripts
+      run: |
+        git pull
+        mkdir -p html image assets   
+        rm -rf html/* image/* assets/*
+        python fetchTE.py
+        rm te.log *.pkl && rm -rf __pycache__
+
+    - name: Commit changes
+      run: |
+        git config --global user.email "actions@github.com"
+        git config --global user.name "GitHub Actions"
+        git add .
+        git commit -m "GitHub Actions Auto Builder at $(TZ=Asia/Singapore date +'%Y-%m-%d %H:%M:%S')"
+        git push
